@@ -7,10 +7,10 @@
     <title>Redirect</title>
 
     <style>
-        :root { --fondo: #f9fafb; --texto: #6b7280; }
+        :root { --fondo: #f9fafb; --texto: #6b7280; --enlace: #2563eb; }
 
         @media (prefers-color-scheme: dark) {
-            :root { --fondo: #0f172a; --texto: #94a3b8; }
+            :root { --fondo: #0f172a; --texto: #94a3b8; --enlace: #60a5fa; }
         }
 
         body {
@@ -25,10 +25,16 @@
             text-align: center;
             padding: 0 16px;
         }
+
+        p { margin: 8px 0; }
+        a { color: var(--enlace); font-weight: 600; font-size: 18px; }
     </style>
 </head>
 <body>
-    <!-- A propósito no lista las aplicaciones disponibles. -->
-    <p>Usa el enlace que te compartieron.</p>
+    <!-- Un enlace por aplicación (ruta relativa a su carpeta). -->
+    <main>
+        <p>Selecciona la aplicación a la que quieres entrar:</p>
+        <p><a href="gastos/">Gastos Externos</a></p>
+    </main>
 </body>
 </html>

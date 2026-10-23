@@ -17,7 +17,7 @@ Compartir siempre el enlace **con la barra final** (`/gastos/`).
 
 ```
 redirect/
-├── index.html          # página neutra (no lista las aplicaciones)
+├── index.html          # página principal: un enlace por aplicación
 ├── README.md
 └── gastos/
     └── index.html      # redirige a Gastos Externos
@@ -26,9 +26,10 @@ redirect/
 ## Agregar otra aplicación
 
 1. Copiar la carpeta `gastos/` con el nombre del enlace (por ejemplo `inventario/`).
-2. En su `index.html`, cambiar la dirección de destino en los **3 lugares**
+2. Agregar su enlace en el `index.html` de la raíz (`<p><a href="inventario/">Nombre</a></p>`).
+3. En su `index.html`, cambiar la dirección de destino en los **3 lugares**
    marcados con `DESTINO` y el título de la página.
-3. Publicar (ver abajo). El enlace nuevo será `https://<sitio>.onrender.com/inventario/`.
+4. Publicar (ver abajo). El enlace nuevo será `https://<sitio>.onrender.com/inventario/`.
 
 ## Cambiar el destino (por ejemplo, si cambia la IP del servidor)
 
